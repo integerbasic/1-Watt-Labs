@@ -1,11 +1,16 @@
+// -*- mode: c++ -*-
 
 byte current_digits[] = {10, 10, 10, 10}; //all blank
 byte current_dp = 0;
 byte current_on = 0;
 
 /*
-  left to right digit select map:
-  02 16 08 04
+  Left to right (most significant to least significant) digit select map:
+  0x02 0x10 0x08 0x04
+
+  Codes sent to the device must be inverted.  In same order:
+  0xFD 0xEF 0xF7 0xFB
+
 */
 byte msel[] = {4, 8, 16, 2};
 
@@ -18,18 +23,21 @@ word psig[] = {1, 10, 100, 1000};
 /*
   map of LED segments to bit position
 
-     5
-   -----
-  3|   |7
-   |   |
-   | 6 |
-   -----
-  1|   |4
-   |   |
-   | 0 |
-   -----
+          5(0x20)
+         ---------
+  3(0x08)|       |7(0x80)
+         |       |
+         |6(0x40)|
+         ---------
+  1(0x02)|       |4(0x10)
+         |       |
+         |0(0x01)|
+         ---------
 
-  So, for example, to create the digit '1', turn on bits 7 and 4
+  So, for example, to create the digit '7',
+  turn on bits 5, 7, and 4.  The necesary byte  value is
+  0x20 + 0x80 + 0x10 = 0xB0
+
 */
 byte dmap[] = {
   (1 << 5) + (1 << 3) + (1 << 1) + (1 << 0) + (1 << 4) + (1 << 7),
