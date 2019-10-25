@@ -1,8 +1,8 @@
 // -*- mode: c++ -*-
 
-byte current_digits[] = {10, 10, 10, 10}; //all blank
-byte current_dp = 0;
-byte current_on = 0;
+byte display_digits[4];
+byte display_dpoints[4];
+byte current_on;
 
 /*
   Left to right (most significant to least significant) digit select map:
@@ -81,6 +81,18 @@ void dec_out(byte pos, byte val, byte dp) {
 
 }
 
+void display_blank(void) {
+  display_digits[0] = 10;
+  display_digits[1] = 10;
+  display_digits[2] = 10;
+  display_digits[3] = 10;
+  display_dpoints[0] = 1;
+  display_dpoints[1] = 1;
+  display_dpoints[2] = 1;
+  display_dpoints[3] = 1;
+  current_on = 0;
+}
+
 /*
   Set the current value to be displayed (val); the device is capable of expressing 0 to 9999.
   10000 or above is interpreted as 'blank' (no output illuminated).
@@ -89,32 +101,32 @@ void dec_out(byte pos, byte val, byte dp) {
 */
 void display_update(word val, byte dp) {
   byte pp, place, digit;
-
+  byte bok = 1;
+  
   if (val > 9999) {
-    current_digits[0] = 10;
-    current_digits[1] = 10;
-    current_digits[2] = 10;
-    current_digits[3] = 10;
-    current_dp = 0;
-    current_on = 0;
-    return;
-  }
+    display_blank();
+  } else {
 
-  for (pp = 4; pp >= 1; pp--) {
-    place = pp - 1;
-    digit = val / psig[place];
-    val = val % psig[place];
-    if (digit > 0) {
-      current_digits[place] = digit;
-    } else if (place <= dp) {
-      current_digits[place] = 0;
-    } else {
-      current_digits[place] = 10; //blank
+    for (pp = 4; pp >= 1; pp--) {
+      place = pp - 1;
+
+      // set/clear dp flag
+      display_dpoints[place] = (place == dp) ? 1:0;
+
+      digit = val / psig[place];
+      val = val % psig[place];
+      if (digit > 0) {
+	display_digits[place] = digit;
+	bok = 0;
+      } else if (place <= dp) {
+	display_digits[place] = 0;
+      } else if ( bok != 1 ) {
+	display_digits[place] = 0;      
+      } else {
+	display_digits[place] = 10; //blank
+      }
     }
   }
-
-  current_dp = dp;
-  current_on = 0;
 }
 
 /*
@@ -124,11 +136,7 @@ void display_update(word val, byte dp) {
 */
 void display_service(void)
 {
-  if (current_dp == current_on) {
-    dec_out(current_on, current_digits[current_on], 1);
-  } else {
-    dec_out(current_on, current_digits[current_on], 0);
-  }
+  dec_out(current_on, display_digits[current_on], display_dpoints[current_on]);
   current_on++;
   if (current_on == 4) {
     current_on = 0;
