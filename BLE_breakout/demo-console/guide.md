@@ -13,8 +13,8 @@ to connect a desktop computer to the device.  The first diagram here shows how a
 configured for [3.3 volts](https://www.sparkfun.com/products/9873) would be used. The 2nd diagram shows the wiring 
 necessary if the FTDI basic is configured for [5 volts](https://www.sparkfun.com/products/9716).
 
-| FTDI basic hookup ||
-| ![](putty_bb3.png) | ![](putty_bb5.png) |
+| FTDI connection ||
+| <img src="putty_bb3.png" width="200px"/> | <img src="putty_bb5.png" width="200px"/> |
 
 ### Terminal emulation
 
