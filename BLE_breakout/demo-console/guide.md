@@ -1,5 +1,5 @@
 This topic describes hardware and software setup necessary to access the command console of the RN4871 breakout board.  
-This is a necessary preparation step for the BLE breakout demo.
+This is a necessary preparation step for the [BLE breakout demo](../demo-remote-light/guide.md).
 
 - [Hardware](#hardware)
 - [Terminal emulation](#terminal-emulation)
@@ -10,8 +10,11 @@ This is a necessary preparation step for the BLE breakout demo.
 The RN4871-BB has transmit and receive signal lines for serial communication using the RS-232 protocol.  
 Most desktop computing systems no longer have serial ports, so typically a USB-to-serial device is necessary 
 to connect a desktop computer to the device.  The first diagram here shows how a Sparkfun FTDI basic 
-configured for 3.3 volts would be used. The 2nd diagram shows the wiring necessary if the FTDI basic is 
-configured for 5 volts.
+configured for [3.3 volts](https://www.sparkfun.com/products/9873) would be used. The 2nd diagram shows the wiring 
+necessary if the FTDI basic is configured for [5 volts](https://www.sparkfun.com/products/9716).
+
+| FTDI basic hookup ||
+| ![](putty_bb3.png) | ![](putty_bb5.png) |
 
 ### Terminal emulation
 
