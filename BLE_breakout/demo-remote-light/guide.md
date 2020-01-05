@@ -10,7 +10,7 @@ The LED can be turned on an off remotely, using a mobile phone application.
 
 ### Configure the RN4871
 
-Connect to the RN4871 and enter the command mode as described here.  
+Connect to the RN4871 and enter the command mode as described in the [console guide](../demo-console/guide.md).  
 Clean up any previous scripting and/or configuration using the following commands.
 
     CMD> pz
@@ -67,26 +67,32 @@ Make sure the script will run by default:
 
 The RN4871 is now programmed.  It will retain this program even when powered down.  
 For more information on all the commands and scripting capabilities of the RN4871, refer to the 
-Bluetooth Low Energy Module User's Guide.  
-This document can be found under the Documents tab of the Microchip RN4871 home page.
+_Bluetooth Low Energy Module User's Guide_.  
+This document can be found under the _Documents_ tab of the 
+[Microchip RN4871 home page](https://www.microchip.com/wwwproducts/en/RN4871).
 
 ### Assemble the circuit
 
 Assemble the remote LED system as shown below.  The capacitor should be non-polarized and approximately 1uf.  
 The resistor is 220 ohms. For the diode, the anode is on the right.  You should connect the power (the red wire) last.
 
+<img src="remote_light_bb.png" width="650"/>
+
 When you connect the power, a blue LED on the left side of the RN4871-BB board should begin to flash, 
 approximately once every three seconds.
 
 ### Run the control application
 
-We can use nRF Connect for Mobile to control the device.  
+We can use _nRF Connect for Mobile_ to control the device.  
 This diagnostic application is available for iPhones and Android phones.  
-Check the app-store links on the Nordic Semiconductor page, or search for the name in the app-store on your phone.
+Check the app-store links on the 
+[Nordic Semiconductor page](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-mobile), 
+or search for the name in the app-store on your phone.
 
 Run the application and navigate as described below.
 (Note: there is an older version of the application with a significantly different layout.  
 The navigation for this older version is here.)
+
 1.
 
 Locate your device in the scan list and press connect.
