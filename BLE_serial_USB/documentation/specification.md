@@ -20,10 +20,18 @@ Four additional hardware features are included:
 
 Two topics are available in the library to assist in developing with this device:
 
-    A guide for accessing the console of the device: BLE serial USB console
-    A demonstration of communication between the device and a mobile phone application: BLE serial USB demo
+- [A guide for accessing the console of the device](../demo-console/guide.md)
+- [A demonstration of communication between the device and a mobile phone application](../demo-pipe/guide.html)
 
-References
+### Pinouts
+
+#### J1
+Pin | Description
+--- | -----------
+1 | GND
+2 | RN4871 System configuration input P0_2. Leave disconnected for normal operation. Jumper to ground to re-flash EEPROM.
+
+### References
 
 Part schematic
 
