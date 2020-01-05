@@ -21,7 +21,7 @@ Four additional hardware features are included:
 Two topics are available in the library to assist in developing with this device:
 
 - [A guide for accessing the console of the device](../demo-console/guide.md)
-- [A demonstration of communication between the device and a mobile phone application](../demo-pipe/guide.html)
+- [A demonstration of communication between the device and a mobile phone application](../demo-pipe/guide.md)
 
 ### Pinouts
 
@@ -33,6 +33,5 @@ Pin | Description
 
 ### References
 
-Part schematic
-
-Vendor home page for RN4871
+[Schematic](schematic.svg)
+[Vendor home page for RN4871](https://www.microchip.com/wwwproducts/en/RN4871)
