@@ -1,9 +1,9 @@
 This topic describes hardware and software setup necessary to access the command console of the RN4871 breakout board.  
 This is a necessary preparation step for the BLE breakout demo.
 
-[Hardware](#hardware)
-[Terminal emulation](#terminal-emulation)
-[Command mode access](#command-mode-access)
+- [Hardware](#hardware)
+- [Terminal emulation](#terminal-emulation)
+- [Command mode access](#command-mode-access)
 
 ### Hardware
 
