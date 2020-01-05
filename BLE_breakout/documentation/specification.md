@@ -1,4 +1,4 @@
-![Part](pinout.png | width=250)
+![Part](pinout.png){:width="250px"}
 
 The BLE breakout board serves primarily to expose all the connections of the RN4871 module in a form-factor that is easier for use on a breadboard or other prototype environment.
 
