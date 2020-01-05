@@ -91,8 +91,8 @@ or search for the name in the app-store on your phone.
 
 Run the application and navigate as described below.
 
-_(Note: there is an older version of the application with a significantly different layout.
-The navigation for this older version is [here](nRF connect demo/old.app.md).)_
+Note: there is an older version of the application with a significantly different layout.
+The navigation for this older version is [here](./nRF connect demo/old.app.md) .
 
 #### 1. Locate your device in the scan list and press connect.
 <img src="nRF demo 2/connect.png" width="350"/>
