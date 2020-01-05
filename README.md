@@ -1,1 +1,2 @@
-# 1watt-demos
+# Source and Documentation for 1 Watt Labs
+
