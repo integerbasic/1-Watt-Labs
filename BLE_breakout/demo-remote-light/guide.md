@@ -93,21 +93,15 @@ Run the application and navigate as described below.
 (Note: there is an older version of the application with a significantly different layout.  
 The navigation for this older version is here.)
 
-1.
-
-Locate your device in the scan list and press connect.
-2.
-
-Tap the right side of the tab-bar to reach the Services tab.
-3.
-
-Swipe upwards to scroll to the bottom of the Attribute Table.
-4.
-
-At the bottom of the attribute table you should see the GUID for the characteristic we created on our BLE device (highlighted here in yellow).  Tap the circled-arrow to interact with this characteristic.
-5a.
-
-To turn the LED off, select data type Uint8 and enter one digit; 8.  Then press Write.
-5b.
-
-To turn the LED on, select data type Uint8 and enter one digit; 0.  Then press Write.
+1. Locate your device in the scan list and press connect.
+   <img src="nRF demo 2/connect.png" width="350"/>
+2. Tap the right side of the tab-bar to reach the Services tab.
+3. Swipe upwards to scroll to the bottom of the Attribute Table.
+4. At the bottom of the attribute table you should see the 
+   GUID for the characteristic we created on our BLE device (highlighted here in yellow).  
+   Tap the circled-arrow to interact with this characteristic.
+5. 
+   - To turn the LED off, select data type Uint8 and enter one digit; 8.  
+     Then press Write.
+   - To turn the LED on, select data type Uint8 and enter one digit; 0.  
+     Then press Write.
