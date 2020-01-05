@@ -32,6 +32,5 @@ Pin | Description
 2 | RN4871 System configuration input P0_2. Leave disconnected for normal operation. Jumper to ground to re-flash EEPROM.
 
 ### References
-
-[Schematic](schematic.svg)
-[Vendor home page for RN4871](https://www.microchip.com/wwwproducts/en/RN4871)
+- [Schematic](schematic.svg)
+- [Vendor home page for RN4871](https://www.microchip.com/wwwproducts/en/RN4871)
