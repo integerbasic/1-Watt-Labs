@@ -13,22 +13,23 @@ to connect a desktop computer to the device.  The first diagram here shows how a
 configured for [3.3 volts](https://www.sparkfun.com/products/9873) would be used. The 2nd diagram shows the wiring 
 necessary if the FTDI basic is configured for [5 volts](https://www.sparkfun.com/products/9716).
 
-| FTDI connection ||
-| <img src="putty_bb3.png" width="200px"/> | <img src="putty_bb5.png" width="200px"/> |
+<img src="putty_bb3.png" width="200px"/> <img src="putty_bb5.png" width="200px"/>
 
 ### Terminal emulation
 
-This example uses the 'Putty' terminal emulator to access the RN4871 console.  You can get Putty here.  
+This example uses the 'Putty' terminal emulator to access the RN4871 console.  
+You can get Putty [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).  
 It is available for many operating systems.  The default serial connection settings for the RN4871 UART are 
 the same as the Putty defaults, with one exception; the speed.  The default speed for the RN4871 is 115200 baud.
 
 So, for example, if you have connected your RN4871-BB to port 4 on a Windows system, 
-the Putty dialog to initiate a terminal should look like this; 
+the Putty dialog to initiate a terminal should look like this:
 
-
-Putty configuration dialog excerpt
+<img src="putty.cfg.png" width="350px"/>
 
 This setting, found in the 'Terminal' section of the Putty configuration, is also helpful for uncluttered console output:
+
+<img src="putty.cfg2.png" width="200px"/>
 
 ### Command mode access
 
