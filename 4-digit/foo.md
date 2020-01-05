@@ -1,4 +1,4 @@
-[look](##bottom)
+[look](#bottom)
 
 ## junk
 here be junk
