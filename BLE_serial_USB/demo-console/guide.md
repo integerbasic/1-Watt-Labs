@@ -45,6 +45,9 @@ If you did not see the 'd' in the terminal when you typed it, you might also pre
 
 Subsequent commands should be visible as you type them.
 
-Refer to the device user's guide for other useful commands.  Before executing the demo, you should exit from the command mode.  To exit the command mode, press the dash ('-') key three times, followed by the 'enter' key.  You should see this indication in the terminal window:
+Refer to [the device user's guide](http://ww1.microchip.com/downloads/en/DeviceDoc/RN4870-71-Bluetooth-Low-Energy-Module-User-Guide-DS50002466C.pdf) for other useful commands.
+Before executing [the demo](../demo-pipe/guide.md), you should exit from the command mode.
+To exit the command mode, press the dash ('-') key three times, followed by the 'enter' key.
+You should see this indication in the terminal window:
 
     CMD> END
