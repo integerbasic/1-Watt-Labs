@@ -25,34 +25,26 @@ This setting, found in the 'Terminal' section of the Putty configuration, is als
 
 Once you've physically connected the device and started the terminal emulator,  you can switch the device to command mode.  This is done by typing three dollar-sign characters in the terminal emulator application.  You will not see the characters in the terminal window, but the result should be a command prompt returned by the RN4871:
 
-CMD>
+    CMD>
 
 The command mode is a good way to verify that the device is properly attached to the system.  One basic command available is 'd' (display basic configuration).  Try pressing the 'd' key followed by 'enter' key.  You should see something like this as a result:
 
-CMD> d
-
-BTA=D88039F80080
-
-Name=RN_BLE
-
-Connected=no
-
-Authen=2
-
-Features=0000
-
-Services=00
-
-CMD>
+    CMD> d
+    BTA=D88039F80080
+    Name=RN_BLE
+    Connected=no
+    Authen=2
+    Features=0000
+    Services=00
+    CMD>
 
 If you did not see the 'd' in the terminal when you typed it, you might also prefer to turn on 'echo'.  Do this by pressing the '+' key followed by the 'enter' key.  The device should respond like this:
 
-CMD> ECHO ON
-
-CMD>
+    CMD> ECHO ON
+    CMD>
 
 Subsequent commands should be visible as you type them.
 
 Refer to the device user's guide for other useful commands.  Before executing the demo, you should exit from the command mode.  To exit the command mode, press the dash ('-') key three times, followed by the 'enter' key.  You should see this indication in the terminal window:
 
-CMD> END
+    CMD> END
