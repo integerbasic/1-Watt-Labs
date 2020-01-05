@@ -1,3 +1,9 @@
+- [Overview](#overview)
+- [Pinouts](#pinouts)
+- [References](#references)
+
+### Overview 
+
 <img src="pinout.png" width="400px"/>
 
 The BLE breakout board serves primarily to expose all the connections of the RN4871 module in a form-factor that is easier for use on a breadboard or other prototype environment.
@@ -14,8 +20,8 @@ Two demonstration topics are available to assist in developing with this device:
 * [A guide for accessing the console of the device](../demo-console/guide.md)
 * [A demonstration of remote-control of a digital signal](../demo-remote-light/guide.md)
 
-## Pinouts
-### J1 
+### Pinouts
+#### J1 
 | Pin | Description |
 |-----|-------------|
 | 1 | RN4871 P3_6 : GPIO; default: Input; pulled-high
@@ -27,7 +33,7 @@ Two demonstration topics are available to assist in developing with this device:
 | 7 | RN4871 P2_7 : UART_TX_IND output pin
 | 8 | RN4871 P2_0 : System configuration input; 1=Application mode (default), 0=Flash update
 
-### J2 
+#### J2 
 | Pin | Description |
 |-----|-------------|
 | 1 | 5 volt power supply. Range 4.8v ~ 6
@@ -39,8 +45,12 @@ Two demonstration topics are available to assist in developing with this device:
 | 7 | RN4871 UART_RX
 | 8 | RN4871 UART_TX
 
-### J3
+#### J3
 | Pin | Description |
 |-----|-------------|
 | 1 | GND
 | 2 | RN4871 System configuration input P0_2. Leave disconnected for normal operation. Jumper to ground to re-flash EEPROM.
+
+### References
+[Schematic](schematic.svg)
+[Vendor home page for RN4871](https://www.microchip.com/wwwproducts/en/RN4871)
