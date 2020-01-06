@@ -1,4 +1,9 @@
+- [Overview](#overview)
+- [References](#references)
+
 <img src="4for5.png" width="550px"/>
+
+### Overview
 
 The 4 digit backpack provides quick and easy control of four 7-segment digits and decimal points,
 via a serial protocol interface.  The colon and degree LED dots are not connected in this design.
@@ -26,3 +31,9 @@ This is covered in more detail in the demonstration.
 The following diagrams illustrate the exact byte values necessary for the respective digit and segment control.
 
 <img src="position_code.png" width="350px"/>  <img src="segment_code.png" width="250px"/>
+
+See [the demonstration topic](../demo-pro-micro/guide.md) for a complete example.
+
+### References
+- [Part schematic](schematic.svg)
+- [Datasheet for LED device](https://www.mouser.com/datasheet/2/239/LTC-4627JR-1144006.pdf)
