@@ -3,15 +3,15 @@ One end of the communication link is a BLE serial USB device, attached to a work
 The other end is a mobile phone running a test application.
 
 - [Configure the RN4871](#configure-the-rn4871)
-- [Activate the service](#activate-the-service)
-- [Run the test application](#run-the-test-appliaction)
+  + [Activate the service](#activate-the-service)
+- [Run the test application](#run-the-test-application)
 - [Screenshots of Smart Data](#screenshots-of-smart-data)
 
 ### Configure the RN4871
 
-Connect the BLE serial USB device to a laptop or workstation and enter the command mode as described here . 
+Connect the BLE serial USB device to a laptop or workstation and enter the command mode as described [here](../demo-console/guide.md). 
 
-### Activate the service
+#### Activate the service
 
 Enter these commands:
 
