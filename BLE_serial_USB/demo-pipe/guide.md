@@ -37,4 +37,8 @@ Run the application.  Discovered devices are listed (screen 1 below).  Select yo
 
 1. Scan and connect
 
+<img src="connect.png" width="250px"/>
+
 2. Access service
+
+<img src="access.png" width="250px"/>
