@@ -2,10 +2,10 @@ This topic demonstrates communication over Bluetooth Low Energy, using the 'tran
 One end of the communication link is a BLE serial USB device, attached to a workstation with a terminal emulator.
 The other end is a mobile phone running a test application.
 
-[Configure the RN4871](#configure-the-rn4871)
-[Activate the service](#activate-the-service)
-[Run the test application](#run-the-test-appliaction)
-[Screenshots of Smart Data](#screenshots-of-smart-data)
+- [Configure the RN4871](#configure-the-rn4871)
+- [Activate the service](#activate-the-service)
+- [Run the test application](#run-the-test-appliaction)
+- [Screenshots of Smart Data](#screenshots-of-smart-data)
 
 ### Configure the RN4871
 
